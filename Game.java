@@ -10,9 +10,10 @@ public class Game {
         String[] marks = {"♠︎", "❤︎", "♦︎", "♣︎"};
         for (int i=0 ; i<4 ; i++) {
             for (int j=0 ; j<13 ; j++) {
-                cards[i*13+j] = new Card();
-                cards[i*13+j].mark = marks[i];
-                cards[i*13+j].number = j+1;
+                Card c = new Card();
+                c.mark = marks[i];
+                c.number = j+1;
+                cards[i*13+j] = c;
             }
         }
     }
