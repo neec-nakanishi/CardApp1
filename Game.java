@@ -20,6 +20,7 @@ public class Game {
     
     void start() {
         Card card = p.turn(cards);
+        card.open();
         judge(card);
     }
 
